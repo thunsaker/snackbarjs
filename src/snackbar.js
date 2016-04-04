@@ -62,7 +62,7 @@
 			var snackbarNew = false;
 
             if (!isset(options.id)) {
-                options.id = "snackbar" + Date.now();
+                options.id = "snackbar" + Date.now() + Math.floor(Math.random() * (100 - 0 + 1));
                 $snackbar = $("<div/>").attr("id", options.id).attr("class", "snackbar");
 				snackbarNew = true;
             } else {
