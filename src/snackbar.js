@@ -150,7 +150,6 @@
                 setTimeout(function() {
                     if ($snackbar.data("animationId2") === animationId2) {
                         $snackbar.removeClass("snackbar-opened");
-                        events.emit(options.id);
                         events.off(options.id);
                     }
                 }, options.timeout);
